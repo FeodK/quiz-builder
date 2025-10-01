@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@keyframes progress {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+button,
+[role="button"],
+a {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  cursor: text;
+}
+
+.draggable {
+  cursor: grab;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
+
+.animate-progress {
+  animation: progress 5s linear forwards;
+}
+
+.animate-in {
+  animation: slideInFromRight 0.3s ease-out;
+}
+
+.slide-in-from-right-8 {
+  animation: slideInFromRight 0.3s ease-out;
+}
